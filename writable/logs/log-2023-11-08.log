@@ -1,0 +1,340 @@
+INFO - 2023-11-08 00:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 00:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 00:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 00:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 00:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 18:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-08 19:19:41 --> Too few arguments to function App\Controllers\Compra::pagopaypal(), 1 passed in C:\xampp\htdocs\crown\system\CodeIgniter.php on line 932 and exactly 3 expected
+in APPPATH\Controllers\Compra.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('argentina,riotercero,peru')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-08 19:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:45:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 19:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-08 19:53:56 --> Undefined variable $datosEnvio
+in APPPATH\Views\finalizado.php on line 4.
+ 1 APPPATH\Views\finalizado.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datosEnvio', 'C:\\xampp\\htdocs\\crown\\app\\Views\\finalizado.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\finalizado.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 5 APPPATH\Controllers\Home.php(90): view('finalizado')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->finalizado()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-08 19:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 20:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-08 20:17:28 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:38 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:39 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:39 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:39 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:39 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:39 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:39 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:39 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:40 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:40 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:40 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:40 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:40 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:40 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:41 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:41 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:41 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:41 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:41 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:42 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:42 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:42 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:42 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 20:17:42 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-08 20:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 20:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 20:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-08 20:24:03 --> Invalid file: "finalizado.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finalizado.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('finalizado', [], true)
+ 3 APPPATH\Controllers\Compra.php(50): view('finalizado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-08 20:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-08 20:26:31 --> Undefined variable $ciuda
+in APPPATH\Controllers\Compra.php on line 41.
+ 1 APPPATH\Controllers\Compra.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ciuda', 'C:\\xampp\\htdocs\\crown\\app\\Controllers\\Compra.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('cordoba', 'rio tercero', 'haiti', '1727', '1', 'ashe')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-08 20:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 20:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 20:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 20:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 20:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-08 20:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

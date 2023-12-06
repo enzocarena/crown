@@ -1,0 +1,67 @@
+INFO - 2023-09-06 20:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 20:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-06 20:29:46 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\admin.php on line 80.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH\Controllers\Home.php(31): view('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-06 20:29:47 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\admin.php on line 80.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH\Controllers\Home.php(31): view('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-06 20:31:22 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\admin.php on line 80.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH\Controllers\Home.php(31): view('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-06 20:34:54 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\admin.php on line 80.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH\Controllers\Home.php(31): view('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-06 20:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-06 20:35:02 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\admin.php on line 80.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH\Controllers\Home.php(31): view('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-06 20:35:04 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\admin.php on line 80.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH\Controllers\Home.php(31): view('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-06 20:36:21 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\admin.php on line 80.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH\Controllers\Home.php(31): view('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-06 23:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

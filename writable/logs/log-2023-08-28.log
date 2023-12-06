@@ -1,0 +1,106 @@
+INFO - 2023-08-28 21:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-28 21:54:10 --> mysqli_sql_exception: Unknown column 't.talle' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n      SELECT ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n      SELECT ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n      SELECT ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(27): CodeIgniter\Database\BaseConnection->query('\r\n      SELECT ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\datosdb.php(22): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Datosdb->getAllInfo()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datosdb))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-28 21:54:10 --> Unknown column 't.talle' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+      SELECT p.nombre, ti.tipo, c.color, t.talle, p.precio, tp.cantidad_stock
+      FROM producto p
+      INNER JOIN talle_producto tp
+        ON p.id = tp.id_producto
+      INNER JOIN talle t
+        ON t.id = tp.id_talle
+      INNER JOIN tipo ti
+        ON ti.id = p.tipo_id
+      INNER JOIN color c
+        ON c.id = p.color_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+      SELECT p.nombre, ti.tipo, c.color, t.talle, p.precio, tp.cantidad_stock
+      FROM producto p
+      INNER JOIN talle_producto tp
+        ON p.id = tp.id_producto
+      INNER JOIN talle t
+        ON t.id = tp.id_talle
+      INNER JOIN tipo ti
+        ON ti.id = p.tipo_id
+      INNER JOIN color c
+        ON c.id = p.color_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+      SELECT p.nombre, ti.tipo, c.color, t.talle, p.precio, tp.cantidad_stock
+      FROM producto p
+      INNER JOIN talle_producto tp
+        ON p.id = tp.id_producto
+      INNER JOIN talle t
+        ON t.id = tp.id_talle
+      INNER JOIN tipo ti
+        ON ti.id = p.tipo_id
+      INNER JOIN color c
+        ON c.id = p.color_id
+    ')
+ 4 APPPATH\Models\producto.php(27): CodeIgniter\Database\BaseConnection->query('
+      SELECT p.nombre, ti.tipo, c.color, t.talle, p.precio, tp.cantidad_stock
+      FROM producto p
+      INNER JOIN talle_producto tp
+        ON p.id = tp.id_producto
+      INNER JOIN talle t
+        ON t.id = tp.id_talle
+      INNER JOIN tipo ti
+        ON ti.id = p.tipo_id
+      INNER JOIN color c
+        ON c.id = p.color_id
+    ')
+ 5 APPPATH\Controllers\datosdb.php(22): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Datosdb->getAllInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datosdb))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 22:14:23 --> Call to a member function getJSON() on null
+in APPPATH\Models\producto.php on line 42.
+ 1 APPPATH\Controllers\datosdb.php(26): App\models\Producto->cargarChicha()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Datosdb->cargarChicha()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datosdb))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-28 22:15:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'oversize,10000,2,1)' at line 2 in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        INSER...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        INSER...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        INSER...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(50): CodeIgniter\Database\BaseConnection->query('\r\n        INSER...')
+#4 C:\xampp\htdocs\crown\app\Controllers\datosdb.php(28): App\models\Producto->cargarChicha(Object(stdClass))
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Datosdb->cargarChicha()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datosdb))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-28 22:15:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'oversize,10000,2,1)' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        INSERT INTO producto (nombre, precio, tipo_id, color_id)
+        VALUES (buzo oversize,10000,2,1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        INSERT INTO producto (nombre, precio, tipo_id, color_id)
+        VALUES (buzo oversize,10000,2,1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        INSERT INTO producto (nombre, precio, tipo_id, color_id)
+        VALUES (buzo oversize,10000,2,1)')
+ 4 APPPATH\Models\producto.php(50): CodeIgniter\Database\BaseConnection->query('
+        INSERT INTO producto (nombre, precio, tipo_id, color_id)
+        VALUES (buzo oversize,10000,2,1)')
+ 5 APPPATH\Controllers\datosdb.php(28): App\models\Producto->cargarChicha(Object(stdClass))
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Datosdb->cargarChicha()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datosdb))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

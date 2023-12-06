@@ -1,0 +1,2020 @@
+INFO - 2023-10-25 18:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 18:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 19:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 19:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 19:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 19:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-25 19:36:11 --> mysqli_sql_exception: Unknown column 'p.id' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(47): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:36:11 --> Unknown column 'p.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(47): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:36:12 --> mysqli_sql_exception: Unknown column 'p.id' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(47): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:36:12 --> Unknown column 'p.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(47): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:36:12 --> mysqli_sql_exception: Unknown column 'p.id' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(47): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:36:12 --> Unknown column 'p.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(47): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 19:41:07 --> Undefined array key "id"
+in APPPATH\Views\principal.php on line 5.
+ 1 APPPATH\Views\principal.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\crown\\app\\Views\\principal.php', 5)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\principal.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('principal', [], true)
+ 5 APPPATH\Controllers\Home.php(48): view('principal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 19:41:08 --> Undefined array key "id"
+in APPPATH\Views\principal.php on line 5.
+ 1 APPPATH\Views\principal.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\crown\\app\\Views\\principal.php', 5)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\principal.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('principal', [], true)
+ 5 APPPATH\Controllers\Home.php(48): view('principal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 19:41:08 --> Undefined array key "id"
+in APPPATH\Views\principal.php on line 5.
+ 1 APPPATH\Views\principal.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\crown\\app\\Views\\principal.php', 5)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\principal.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('principal', [], true)
+ 5 APPPATH\Controllers\Home.php(48): view('principal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:41:44 --> mysqli_sql_exception: Unknown column 'p.id' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:41:44 --> Unknown column 'p.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:42:00 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:42:00 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:42:01 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:42:01 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:42:01 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:42:01 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:42:04 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:42:04 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:42:04 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:42:04 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:42:05 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:42:05 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:42:22 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:42:22 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:42:22 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:42:22 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:42:23 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:42:23 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:42:23 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:42:23 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:42:26 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:42:26 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:42:26 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:42:26 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:42:27 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:42:27 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:43:00 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:43:00 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:43:28 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:43:28 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:43:28 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:43:28 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=34')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('34')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 19:43:33 --> mysqli_sql_exception: Unknown column 'p.id' in 'where clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(64): App\models\Producto->getProductInfo('35')
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->index2('35')
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-25 19:43:33 --> Unknown column 'p.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=35', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=35')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=35')
+ 4 APPPATH\Models\producto.php(65): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    WHERE p.id=35')
+ 5 APPPATH\Controllers\Home.php(64): App\models\Producto->getProductInfo('35')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('35')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-25 19:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-25 20:17:26 --> Cannot use object of type CodeIgniter\Session\Session as array
+in APPPATH\Views\headprin.php on line 34.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('headprin', [], true)
+ 4 APPPATH\Views\principal.php(1): view('headprin')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\principal.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('principal', [], true)
+ 8 APPPATH\Controllers\Home.php(48): view('principal', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-25 20:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-25 20:18:54 --> Undefined variable $session
+in APPPATH\Views\headprin.php on line 28.
+ 1 APPPATH\Views\headprin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\crown\\app\\Views\\headprin.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\headprin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('headprin', [], true)
+ 5 APPPATH\Views\principal.php(1): view('headprin')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\principal.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('principal', [], true)
+ 9 APPPATH\Controllers\Home.php(48): view('principal', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-25 20:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-25 20:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

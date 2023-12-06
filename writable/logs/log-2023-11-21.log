@@ -1,0 +1,2473 @@
+INFO - 2023-11-21 19:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 19:32:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7 in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:32:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 19:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 19:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 19:56:49 --> mysqli_sql_exception: Unknown column 'p.id_imagen' in 'on clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:56:49 --> Unknown column 'p.id_imagen' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:56:50 --> mysqli_sql_exception: Unknown column 'p.id_imagen' in 'on clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:56:50 --> Unknown column 'p.id_imagen' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:56:51 --> mysqli_sql_exception: Unknown column 'p.id_imagen' in 'on clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:56:51 --> Unknown column 'p.id_imagen' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:56:51 --> mysqli_sql_exception: Unknown column 'p.id_imagen' in 'on clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:56:51 --> Unknown column 'p.id_imagen' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:57:36 --> mysqli_sql_exception: Unknown column 'i.ruta' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:57:36 --> Unknown column 'i.ruta' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:57:37 --> mysqli_sql_exception: Unknown column 'i.ruta' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:57:37 --> Unknown column 'i.ruta' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:57:37 --> mysqli_sql_exception: Unknown column 'i.ruta' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:57:37 --> Unknown column 'i.ruta' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:57:37 --> mysqli_sql_exception: Unknown column 'i.ruta' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:57:37 --> Unknown column 'i.ruta' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:57:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7 in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:57:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:57:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7 in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:57:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:57:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7 in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:57:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:57:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7 in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:57:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:58:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7 in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:58:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:58:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7 in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:58:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:58:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7 in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:58:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 19:58:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7 in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 19:58:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 20:18:51 --> mysqli_sql_exception: Unknown column 'p.id_imagen' in 'on clause' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->principal()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 20:18:51 --> Unknown column 'p.id_imagen' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(26): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.id_producto,
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(54): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 20:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 20:22:30 --> mysqli_sql_exception: Table 'crown_db.nombre_de_la_tabla' doesn't exist in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(15): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(35): App\Models\Modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 20:22:30 --> Table 'crown_db.nombre_de_la_tabla' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `nombre_de_la_tabla` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'fsda\', \'4534\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nombre_de_la_tabla` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'fsda\', \'4534\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nombre_de_la_tabla` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'fsda\', \'4534\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nombre_de_la_tabla` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(15): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(35): App\Models\Modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 20:24:11 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(35): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 20:24:11 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'fsda\', \'4534\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'fsda\', \'4534\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'fsda\', \'4534\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(35): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 20:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 20:24:14 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(35): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 20:24:14 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'fsda\', \'4534\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'fsda\', \'4534\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'fsda\', \'4534\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(35): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 20:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 20:26:59 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(35): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 20:26:59 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'fsda\', \'4534\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'fsda\', \'4534\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'fsda\', \'4534\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(35): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 20:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-21 20:33:53 --> Call to a member function isValid() on null
+in APPPATH\Controllers\controlprod.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 20:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-21 20:34:05 --> Call to a member function isValid() on null
+in APPPATH\Controllers\controlprod.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 20:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 20:35:13 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(35): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 20:35:13 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'123\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'123\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'123\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(35): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 20:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 20:35:20 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(35): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 20:35:20 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'123\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'123\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'123\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(35): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 20:35:33 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(34): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 20:35:33 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'123\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'123\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'123\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(34): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 20:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 20:40:00 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 20:40:00 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 20:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 20:41:31 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 20:41:31 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 20:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 20:41:55 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 20:41:55 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 20:42:37 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 20:42:37 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 20:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 20:42:56 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 20:42:56 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'139\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 20:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 20:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 20:56:42 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 20:56:42 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'remera\', \'56\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'remera\', \'56\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'remera\', \'56\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 21:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 21:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 21:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 21:11:04 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 21:11:04 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'145\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'145\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'145\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 21:12:27 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 21:12:27 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'145\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'145\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'145\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 21:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 21:17:37 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 21:17:37 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'145\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'145\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'das\', \'145\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 21:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 21:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 21:18:54 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 21:18:54 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'24\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'24\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'24\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 21:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 21:22:24 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 21:22:24 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'24\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'24\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'24\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 21:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 21:45:08 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 21:45:08 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'24\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'24\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'24\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 21:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 21:51:15 --> mysqli_sql_exception: Column 'ruta' cannot be null in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\crown\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\crown\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crown\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crown\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crown\app\Models\modelprod.php(16): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crown\app\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo(Array)
+#9 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+#10 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+#11 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-21 21:51:15 --> Column 'ruta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'24\', \'1\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'24\', \'1\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (\'REMERAS OVERZISE \', \'24\', \'1\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`nombre`, `precio`, `tipo_id`, `color_id`, `ruta`) VALUES (:nombre:, :precio:, :tipo_id:, :color_id:, :ruta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\modelprod.php(16): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\controlprod.php(32): App\Models\modelprod->produtonuevo([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 21:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-21 21:56:47 --> Call to a member function isValid() on null
+in APPPATH\Controllers\controlprod.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 21:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-21 21:56:50 --> Call to a member function isValid() on null
+in APPPATH\Controllers\controlprod.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 21:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 21:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 21:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 21:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-21 21:58:52 --> Call to a member function isValid() on null
+in APPPATH\Controllers\controlprod.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 21:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-21 21:59:01 --> Call to a member function isValid() on null
+in APPPATH\Controllers\controlprod.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 22:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-21 22:01:08 --> Call to a member function isValid() on null
+in APPPATH\Controllers\controlprod.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 22:02:48 --> Call to a member function isValid() on null
+in APPPATH\Controllers\controlprod.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 22:04:00 --> Call to a member function isValid() on null
+in APPPATH\Controllers\controlprod.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 22:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-21 22:04:10 --> Call to a member function isValid() on null
+in APPPATH\Controllers\controlprod.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 22:05:08 --> Call to a member function isValid() on null
+in APPPATH\Controllers\controlprod.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\controlprod->insertarproductos()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controlprod))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 22:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 22:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-21 23:34:43 --> Undefined variable $cantidad
+in APPPATH\Controllers\Compra.php on line 54.
+ 1 APPPATH\Controllers\Compra.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cantidad', 'C:\\xampp\\htdocs\\crown\\app\\Controllers\\Compra.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('1', 'rio tercero', 'werwre', '2354', '24', '2', '2agfd')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 23:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-21 23:45:23 --> Undefined variable $cantidad
+in APPPATH\Controllers\Compra.php on line 65.
+ 1 APPPATH\Controllers\Compra.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cantidad', 'C:\\xampp\\htdocs\\crown\\app\\Controllers\\Compra.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compra->pagopaypal('1', 'rio tercero', 'werwre', '2354', '24', '2', '2agfd')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compra))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-21 23:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

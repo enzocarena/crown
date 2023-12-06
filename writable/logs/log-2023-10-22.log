@@ -1,0 +1,98 @@
+CRITICAL - 2023-10-22 02:00:11 --> syntax error, unexpected double-quoted string "imagenes/corona.png", expecting "," or ";"
+in APPPATH\Views\headprin.php on line 15.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('headprin', [], true)
+ 3 APPPATH\Views\principal.php(1): view('headprin')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\principal.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('principal', [], true)
+ 7 APPPATH\Controllers\Home.php(48): view('principal', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->principal()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-22 02:02:50 --> syntax error, unexpected double-quoted string "imagenes/corona.png", expecting "," or ";"
+in APPPATH\Views\index2.php on line 9.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('index2', [], true)
+ 3 APPPATH\Controllers\Home.php(60): view('index2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-22 02:03:25 --> syntax error, unexpected single-quoted string "imagenes/corona.png", expecting "," or ";"
+in APPPATH\Views\index2.php on line 9.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('index2', [], true)
+ 3 APPPATH\Controllers\Home.php(60): view('index2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-22 02:04:30 --> syntax error, unexpected variable "$prod", expecting "," or ";"
+in APPPATH\Views\index2.php on line 9.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('index2', [], true)
+ 3 APPPATH\Controllers\Home.php(60): view('index2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-22 02:04:42 --> syntax error, unexpected variable "$prod", expecting "," or ";"
+in APPPATH\Views\index2.php on line 9.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('index2', [], true)
+ 3 APPPATH\Controllers\Home.php(60): view('index2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-22 02:04:43 --> syntax error, unexpected variable "$prod", expecting "," or ";"
+in APPPATH\Views\index2.php on line 9.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('index2', [], true)
+ 3 APPPATH\Controllers\Home.php(60): view('index2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-22 02:04:43 --> syntax error, unexpected variable "$prod", expecting "," or ";"
+in APPPATH\Views\index2.php on line 9.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('index2', [], true)
+ 3 APPPATH\Controllers\Home.php(60): view('index2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-22 02:18:43 --> syntax error, unexpected token "<"
+in APPPATH\Views\index2.php on line 8.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('index2', [], true)
+ 3 APPPATH\Controllers\Home.php(60): view('index2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('41')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-22 02:49:29 --> Undefined array key "talle"
+in APPPATH\Views\index2.php on line 10.
+ 1 APPPATH\Views\index2.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "talle"', 'C:\\xampp\\htdocs\\crown\\app\\Views\\index2.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\index2.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('index2', [], true)
+ 5 APPPATH\Controllers\Home.php(60): view('index2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-22 02:57:07 --> Undefined array key "talle"
+in APPPATH\Views\index2.php on line 10.
+ 1 APPPATH\Views\index2.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "talle"', 'C:\\xampp\\htdocs\\crown\\app\\Views\\index2.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\index2.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('index2', [], true)
+ 5 APPPATH\Controllers\Home.php(60): view('index2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index2('34')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

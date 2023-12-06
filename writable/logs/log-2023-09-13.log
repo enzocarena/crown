@@ -1,0 +1,696 @@
+ERROR - 2023-09-13 19:09:39 --> mysqli_sql_exception: Unknown column 'tp.cantidad_stock' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(28): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(45): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->logueado()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 19:09:39 --> Unknown column 'tp.cantidad_stock' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+    INNER JOIN talle t ON
+        t.id = tp.id_talle
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+    INNER JOIN talle t ON
+        t.id = tp.id_talle
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+    INNER JOIN talle t ON
+        t.id = tp.id_talle
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(28): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+    INNER JOIN talle t ON
+        t.id = tp.id_talle
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(45): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->logueado()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-13 19:10:10 --> mysqli_sql_exception: Unknown column 't.num_talle' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(28): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(45): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->logueado()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 19:10:10 --> Unknown column 't.num_talle' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(28): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(45): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->logueado()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-13 19:10:12 --> mysqli_sql_exception: Unknown column 't.num_talle' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(28): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(45): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->logueado()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 19:10:12 --> Unknown column 't.num_talle' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(28): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(45): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->logueado()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-13 19:10:13 --> mysqli_sql_exception: Unknown column 't.num_talle' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(28): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(45): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->logueado()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 19:10:13 --> Unknown column 't.num_talle' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(28): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(45): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->logueado()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-13 19:10:13 --> mysqli_sql_exception: Unknown column 't.num_talle' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(28): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(45): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->logueado()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 19:10:13 --> Unknown column 't.num_talle' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(28): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(45): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->logueado()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-13 19:10:19 --> mysqli_sql_exception: Unknown column 't.num_talle' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(28): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(45): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->logueado()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 19:10:19 --> Unknown column 't.num_talle' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+    
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+    
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+    
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(28): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    t.num_talle,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+    
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(45): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->logueado()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-13 19:10:32 --> mysqli_sql_exception: Unknown column 'tp.cantidad_stock' in 'field list' in C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\crown\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT\r\n ...', 0)
+#1 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT\r\n ...')
+#2 C:\xampp\htdocs\crown\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT\r\n ...')
+#3 C:\xampp\htdocs\crown\app\Models\producto.php(28): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT\r\n ...')
+#4 C:\xampp\htdocs\crown\app\Controllers\Home.php(45): App\models\Producto->getAllInfo()
+#5 C:\xampp\htdocs\crown\system\CodeIgniter.php(932): App\Controllers\Home->logueado()
+#6 C:\xampp\htdocs\crown\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\crown\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crown\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 19:10:32 --> Unknown column 'tp.cantidad_stock' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 4 APPPATH\Models\producto.php(28): CodeIgniter\Database\BaseConnection->query('
+    SELECT
+    p.nombre,
+    ti.tipo,
+    c.color,
+    p.precio,
+    tp.cantidad_stock,
+    i.ruta
+    FROM
+        producto p
+
+    INNER JOIN tipo ti ON
+        ti.id = p.tipo_id
+    INNER JOIN color c ON
+        c.id = p.color_id
+    INNER JOIN imagen i ON
+        i.id_imagen = p.id_imagen
+    ')
+ 5 APPPATH\Controllers\Home.php(45): App\models\Producto->getAllInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->logueado()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 19:33:06 --> syntax error, unexpected token "<"
+in APPPATH\Views\logueado.php on line 7.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('logueado', [], true)
+ 3 APPPATH\Controllers\Home.php(46): view('logueado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->logueado()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 19:39:44 --> Invalid file: "foer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('foer.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('foer', [], true)
+ 3 APPPATH\Views\logueado.php(11): view('foer')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\logueado.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('logueado', [], true)
+ 7 APPPATH\Controllers\Home.php(46): view('logueado', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->logueado()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 20:13:11 --> syntax error, unexpected variable "$producto", expecting "," or ";"
+in APPPATH\Views\logueado.php on line 8.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('logueado', [], true)
+ 3 APPPATH\Controllers\Home.php(46): view('logueado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->logueado()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

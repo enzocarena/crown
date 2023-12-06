@@ -1,0 +1,596 @@
+INFO - 2023-09-12 19:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 20:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 20:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 20:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 20:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 20:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 20:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 20:46:35 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\admin.php on line 80.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH\Controllers\Home.php(31): view('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:46:38 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\admin.php on line 80.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH\Controllers\Home.php(31): view('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 20:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 20:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 20:52:07 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\admin.php on line 80.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH\Controllers\Home.php(31): view('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:52:09 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\admin.php on line 80.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH\Controllers\Home.php(31): view('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:52:39 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:52:40 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:52:40 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:52:41 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:53:27 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:53:27 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:53:28 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:53:28 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:53:28 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:53:36 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:53:36 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:53:37 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:53:37 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:53:37 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:53:37 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 20:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 20:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 20:59:07 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 20:59:09 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:07:54 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:07:55 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:07:56 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:09:36 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:09:36 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:09:37 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:09:37 --> Undefined variable $Color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:14:37 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:14:37 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:14:37 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:15:42 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:15:43 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:15:44 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:15:44 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:15:44 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:19:27 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:22:08 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:22:08 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:22:09 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 21:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 21:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 21:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 21:26:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\principio.php on line 15.
+ 1 APPPATH\Controllers\principio.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\crown\\app\\Controllers\\principio.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Principio->principio()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Principio))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 21:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 21:26:45 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\principio.php on line 15.
+ 1 APPPATH\Controllers\principio.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\crown\\app\\Controllers\\principio.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Principio->principio()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Principio))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 21:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 21:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 21:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 21:50:21 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:50:21 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:50:21 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 21:50:22 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 22:10:35 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 22:22:13 --> Undefined variable $color
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 22:32:54 --> Undefined variable $colorModel
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $colorModel', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 22:32:55 --> Undefined variable $colorModel
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $colorModel', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 22:33:12 --> Undefined variable $colorModel
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $colorModel', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 22:33:14 --> Undefined variable $colorModel
+in APPPATH\Views\admin.php on line 75.
+ 1 APPPATH\Views\admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $colorModel', 'C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 23:59:13 --> Undefined variable $datos
+in APPPATH\Views\logueado.php on line 3.
+ 1 APPPATH\Views\logueado.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\crown\\app\\Views\\logueado.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\logueado.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('logueado', [], true)
+ 5 APPPATH\Controllers\Home.php(46): view('logueado', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->logueado()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 23:59:13 --> Undefined variable $datos
+in APPPATH\Views\logueado.php on line 3.
+ 1 APPPATH\Views\logueado.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\crown\\app\\Views\\logueado.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crown\\app\\Views\\logueado.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('logueado', [], true)
+ 5 APPPATH\Controllers\Home.php(46): view('logueado', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->logueado()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
